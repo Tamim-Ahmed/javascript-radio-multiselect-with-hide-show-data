@@ -1,0 +1,50 @@
+window.onload = function() {
+    var lcs = document.getElementById('lcs');
+    var vp = document.getElementById('vp');
+    var self = document.getElementById('self');
+    var fb = document.getElementById('fb')
+    var sponser = document.getElementById('sponser')
+    var website = document.getElementById('website')
+    var call = document.getElementById('call')
+    var sel = document.getElementById('sel')
+    lcs.onclick = chek;
+    vp.onclick = chekw;
+    self.onclick = che;
+    fb.onclick = facebook;
+    sponser.onclick = spon;
+    website.onclick = web;
+    call.onclick = cal;
+    sel.onclick = se;
+    
+}
+function chek(){
+    document.getElementById('lcs').checked = true;
+    document.getElementById('vp').checked = false;
+    document.getElementById('self').checked = false;
+    if(chek){
+        document.getElementById("lcsf").style.display = "block";
+        document.getElementById("vpf").style.display = "none";
+        document.getElementById("selff").style.display = "none";
+    }
+}
+
+function chekw(){
+    document.getElementById('vp').checked = true;
+    document.getElementById('lcs').checked = false;
+    document.getElementById('self').checked = false;
+    if(chekw){
+        document.getElementById("vpf").style.display = "block";
+        document.getElementById("lcsf").style.display = "none";
+        document.getElementById("selff").style.display = "none";
+    }
+}
+function che(){
+    document.getElementById('vp').checked = false;
+    document.getElementById('lcs').checked = false;
+    document.getElementById('self').checked = true;
+    if(chekw){
+        document.getElementById("vpf").style.display = "none";
+        document.getElementById("lcsf").style.display = "none";
+        document.getElementById("selff").style.display = "block";
+    }
+}
